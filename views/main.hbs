@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongodb curd</title>
+</head>
+<body>
+    <h1>Mongodb crud</h1>
+    {{message}}<br><br>
+    <h3>Create</h3>
+    <form method="post" action="/store_student">
+<label for="">Title</label>
+<input type="text" name="title">
+<label for="">Author</label>
+<input type="text" name="author">
+<input type="button" value="Submit"/>
+    </form><br><br>
+    <ul>
+        {{#each student}}
+        <li>{{this.studentname}}-{{this.mentorname}}-{{this.studentbatch}}</li>
+        {{#each}}
+    </ul>
+</body>
+</html>
